@@ -198,7 +198,7 @@ class AudioCNN_3(nn.Module):
             nn.BatchNorm2d(hidden_units),          
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2),
-            nn.Dropout(0.4)
+            #nn.Dropout(0.4)
         )
 
         self.conv2d_block2 = nn.Sequential(
@@ -210,7 +210,7 @@ class AudioCNN_3(nn.Module):
             nn.BatchNorm2d(hidden_units * 2),          
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2),
-            nn.Dropout(0.4)
+            #nn.Dropout(0.4)
         )
 
         self.conv2d_block3 = nn.Sequential(
@@ -222,7 +222,7 @@ class AudioCNN_3(nn.Module):
             nn.BatchNorm2d(hidden_units * 4),          
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2),
-            nn.Dropout(0.4)
+            #nn.Dropout(0.4)
         )
         
         self.conv2d_block4 = nn.Sequential(
@@ -234,7 +234,7 @@ class AudioCNN_3(nn.Module):
             nn.BatchNorm2d(hidden_units * 8),          
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2),
-            nn.Dropout(0.4)
+            #nn.Dropout(0.4)
         )
 
         self.conv2d_block5 = nn.Sequential(
@@ -246,7 +246,7 @@ class AudioCNN_3(nn.Module):
             nn.BatchNorm2d(hidden_units * 16),          
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2),
-            nn.Dropout(0.4)
+            #nn.Dropout(0.5)
         )
         
         self.global_pool = nn.AdaptiveAvgPool2d((5,5))

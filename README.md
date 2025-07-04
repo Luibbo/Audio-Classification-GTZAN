@@ -44,3 +44,6 @@ Train a model to classify audio files by genre, converting them into mel-spectro
 ## Possible improvments
 - Fine-tuning models Wav2Vec2, PANNs, YAMNet
 - Using more data (e.g. FMA)
+
+## License
+This project is licensed under the [MIT License](LICENSE).
